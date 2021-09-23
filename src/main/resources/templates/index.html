@@ -9,6 +9,16 @@
 </head>
 <body>
 <h1>Pick a planet:</h1>
+<table th:each="planet:${planets}"  class="table table-striped">
+    <thead>
+    <tr>
+        <th th:text="${planet.name}"
+    </tr>
+    </thead>
+    <tr>
+        <td th:text="${planet.yearLength} + ' Earth days in one year.'"></td>
+    </tr>
+</table>
 
 </body>
 </html>
